@@ -1,6 +1,13 @@
+import sys
 from PIL import Image
 
-im = Image.open("space_wallpaper_steg.png")
+# Arguments must be correcly given
+if len(sys.argv) != 3:
+    print("Wrong arguments")
+    print("Filename Picturename Filename_to_save_data")
+    exit()
+
+im = Image.open(sys.argv[1])
 width, height = im.size
 pix = im.load()
 
@@ -38,8 +45,9 @@ print('Calculating...')
 data = decode()
 print('Done.')
 
-f = open('binarydata.txt', 'w')
+f = open(sys.argv[2], 'w')
 f.write(data)
 f.close()
 
-print('Data saved in "binarydata.txt"')
+print('Data saved in "{}"'.format(sys.argv[2]))
+print('Data: {}'.format(data))

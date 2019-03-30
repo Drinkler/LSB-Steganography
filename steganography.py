@@ -1,7 +1,7 @@
 import sys
 from PIL import Image
 
-# Text must be given as arguments
+# Arguments must be correcly given
 if len(sys.argv) < 3:
     print("Wrong arguments")
     print("Filename Picturename [Data to Hide]")
