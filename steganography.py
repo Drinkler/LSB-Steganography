@@ -2,23 +2,23 @@ import sys
 from PIL import Image
 
 # Text must be given as arguments
-if len(sys.argv) < 2:
+if len(sys.argv) < 3:
     print("Wrong arguments")
+    print("Filename Picturename [Data to Hide]")
     exit()
 
 # load picture and get metadata from picture
-im = Image.open("space_wallpaper.jpg")
+im = Image.open(sys.argv[1])
 width, height = im.size
 pix = im.load()
 
 # join all arguments to get a Text
-st = ' '.join(sys.argv[1:])
+st = ' '.join(sys.argv[2:])
 st += '>'
 
 # convert text to binary
 binary_st = ''.join(format(ord(i),'b').zfill(8) for i in st)
 
-#im.show()
 print('Calculating...')
 
 i = 0
@@ -41,7 +41,9 @@ for x in range(width):
             pix[x, y] = (new_r, g, b)
             i += 2
 
-#im.show()
-im.save('space_wallpaper_steg.png')
+# remove picturetype from picturename
+picturename = sys.argv[1].split('.')
+
+im.save('{}_steganography.png'.format(picturename[0]))
 print('Done.')
-print('Saved as "space_wallpaper_steg.png"')
+print('Saved as "{}_steganography.png".'.format(picturename[0]))
