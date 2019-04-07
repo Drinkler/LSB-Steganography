@@ -14,4 +14,4 @@ python3 decrypt_steganography.py space_wallpaper_steganography.png data.txt
 ```
 
 # Max Data Size
-"Max Data Size" = "Image height" * "Image width" * 0.25
+"Max Data Size in Byte" = "Image height" * "Image width" * 0.25
