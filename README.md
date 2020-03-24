@@ -1,4 +1,4 @@
-# Steganography
+# Steganography :framed_picture:
 My first and one of the simplest ways of steganography.
 
 run "python3 steganography.py Picturename [Data which you would like to hide]" to Hide the data in the picture.

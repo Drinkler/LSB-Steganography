@@ -1,11 +1,17 @@
 import sys
 from PIL import Image
 
-# Arguments must be correcly given
+# Arguments must be correctly given
 if len(sys.argv) != 3:
     print("Wrong arguments")
     print("Filename Picturename Filename_to_save_data")
     exit()
+
+
+    # TODO: -msg, --message <Hier könnte ihr Text stehen>
+    # TODO: -f, --file <textdatei.txt>
+    # TODO: -h, --help
+    # TODO: name of the output file extension
 
 im = Image.open(sys.argv[1])
 width, height = im.size
