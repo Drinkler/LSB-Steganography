@@ -1,6 +1,6 @@
 # Steganography :framed_picture:
 
-[![Build Status](https://travis-ci.org/Drinkler/LSB-Steganography.svg?branch=master)](https://travis-ci.org/Drinkler/LSB-Steganography)
+[![Build Status](https://travis-ci.com/Drinkler/LSB-Steganography.svg?branch=master)](https://travis-ci.com/Drinkler/LSB-Steganography)
 
 My first and one of the simplest ways of steganography.
 
