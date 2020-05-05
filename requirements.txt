@@ -1,5 +1,4 @@
 # pip install -r requirements.txt
 
 Pillow==7.0.0
-argparse==1.4.0
 pytest==5.4.1
