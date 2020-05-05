@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/Drinkler/LSB-Steganography.svg?branch=master)](https://travis-ci.com/Drinkler/LSB-Steganography)
 [![GitHub](https://img.shields.io/github/license/drinkler/LSB-Steganography)](https://github.com/Drinkler/LSB-Steganography/blob/master/LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3ac45f8951dc4e7c8dd7d569e4a742f1)](https://www.codacy.com/manual/Drinkler/LSB-Steganography?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Drinkler/LSB-Steganography&amp;utm_campaign=Badge_Grade)
 
 My first and one of the simplest ways of steganography.
 
