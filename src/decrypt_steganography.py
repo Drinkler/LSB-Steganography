@@ -8,11 +8,6 @@ if len(sys.argv) != 3:
     exit()
 
 
-    # TODO: -msg, --message <Hier könnte ihr Text stehen>
-    # TODO: -f, --file <textdatei.txt>
-    # TODO: -h, --help
-    # TODO: name of the output file extension
-
 im = Image.open(sys.argv[1])
 width, height = im.size
 pix = im.load()
@@ -24,7 +19,7 @@ def decode():
     for x in range(width):
         for y in range(height):
             # get pixel rgb
-            r,_,_ = pix[x, y]
+            r, _, _ = pix[x, y]
 
             # convert red int to binary
             binary_r = format(r, 'b').zfill(8)
